@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/QRCode (2).png"/>
+    <!-- Primary Meta Tags -->
+    <title>Mí QR</title>
+    <meta name="title" content="Mí QR">
+    <meta name="description" content="Generador de QR.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gonzalo-quiroga.github.io/Mi-QR/index.html">
+    <meta property="og:title" content="Mí QR">
+    <meta property="og:description" content="Generador de QR.">
+    <meta property="og:image" content="https://i.postimg.cc/L8pD06bZ/M-QR.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gonzalo-quiroga.github.io/Mi-QR/index.html">
+    <meta property="twitter:title" content="MíQR">
+    <meta property="twitter:description" content="Generador de QR.">
+    <meta property="twitter:image" content="https://i.postimg.cc/L8pD06bZ/M-QR.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="row">
+            <input type="color" class="light" value="#ffffff">
+            <input type="color" class="dark">
+            <select class="sizes">
+                <option value="100">100×100</option>
+                <option value="200">200×200</option>
+                <option value="300">300×300</option>
+                <option selected value="400">400×400</option>
+                <option value="500">500×500</option>
+                <option value="600">600×600</option>
+                <option value="700">700×700</option>
+                <option value="800">800×800</option>
+                <option value="900">900×900</option>
+                <option value="1000">1000×1000</option>
+            </select>
+        </div>
+        <input type="text" class="qr-text" placeholder="Ingrese texto QR">
+        <div id="qr-code"></div>
+        <div class="action-container">
+            <a href="#" class="download btn" download="QRCode">
+                <span>Descargar</span>
+                <img src="download.svg" alt="">
+            </a>
+            <button class="btn share-btn">
+                <span>Compartir</span>
+                <img src="share.svg" alt="">
+            </button>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
